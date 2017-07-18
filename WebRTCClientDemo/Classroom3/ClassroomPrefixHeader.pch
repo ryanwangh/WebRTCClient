@@ -1,0 +1,15 @@
+//
+//  ClassroomPrefixHeader.pch
+//  Classroom3
+//
+//  Created by ryan on 2017/4/24.
+//  Copyright © 2017年 ryan. All rights reserved.
+//
+
+#ifndef ClassroomPrefixHeader_pch
+#define ClassroomPrefixHeader_pch
+
+#import "CRMacros.h"
+
+
+#endif /* ClassroomPrefixHeader_pch */

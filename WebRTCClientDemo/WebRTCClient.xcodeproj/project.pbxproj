@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7015E9BF1EB856AA002FA9FB /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7015E9BE1EB856AA002FA9FB /* MetalKit.framework */; };
+		703C69EB1ECD7FAC00C7B7B8 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703C69EA1ECD7FAC00C7B7B8 /* WebRTC.framework */; };
+		703C69ED1ECD807000C7B7B8 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703C69EA1ECD7FAC00C7B7B8 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		706AE9851EADE3BF0018F278 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 706AE9841EADE3BF0018F278 /* main.m */; };
+		706AE9881EADE3BF0018F278 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 706AE9871EADE3BF0018F278 /* AppDelegate.m */; };
+		706AE98E1EADE3BF0018F278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706AE98C1EADE3BF0018F278 /* Main.storyboard */; };
+		706AE9901EADE3BF0018F278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 706AE98F1EADE3BF0018F278 /* Assets.xcassets */; };
+		706AE9931EADE3BF0018F278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 706AE9911EADE3BF0018F278 /* LaunchScreen.storyboard */; };
+		706AE99E1EADE3BF0018F278 /* Classroom3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 706AE99D1EADE3BF0018F278 /* Classroom3Tests.m */; };
+		706AE9A91EADE3BF0018F278 /* Classroom3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 706AE9A81EADE3BF0018F278 /* Classroom3UITests.m */; };
+		706AE9C11EADE8900018F278 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 706AE9C01EADE8900018F278 /* ViewController.m */; };
+		94708D3E1F1E21FD00BC6EC3 /* SocketClient+Recver.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708CF91F1E21FD00BC6EC3 /* SocketClient+Recver.m */; };
+		94708D3F1F1E21FD00BC6EC3 /* SocketClient+Sender.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708CFB1F1E21FD00BC6EC3 /* SocketClient+Sender.m */; };
+		94708D401F1E21FD00BC6EC3 /* SocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708CFD1F1E21FD00BC6EC3 /* SocketClient.m */; };
+		94708D411F1E21FD00BC6EC3 /* CRPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D001F1E21FD00BC6EC3 /* CRPeer.m */; };
+		94708D421F1E21FD00BC6EC3 /* CRStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D021F1E21FD00BC6EC3 /* CRStream.m */; };
+		94708D431F1E21FD00BC6EC3 /* AgoraClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D061F1E21FD00BC6EC3 /* AgoraClient.m */; };
+		94708D441F1E21FD00BC6EC3 /* VideoSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D081F1E21FD00BC6EC3 /* VideoSession.m */; };
+		94708D451F1E21FD00BC6EC3 /* CRClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D0B1F1E21FD00BC6EC3 /* CRClient.m */; };
+		94708D461F1E21FD00BC6EC3 /* CRMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D0D1F1E21FD00BC6EC3 /* CRMessage.m */; };
+		94708D471F1E21FD00BC6EC3 /* CRRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D0F1F1E21FD00BC6EC3 /* CRRoom.m */; };
+		94708D481F1E21FD00BC6EC3 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 94708D111F1E21FD00BC6EC3 /* config.xml */; };
+		94708D491F1E21FD00BC6EC3 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D151F1E21FD00BC6EC3 /* CDVLogger.m */; };
+		94708D4A1F1E21FD00BC6EC3 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D181F1E21FD00BC6EC3 /* CDVDevice.m */; };
+		94708D4B1F1E21FD00BC6EC3 /* iosrtcPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D1B1F1E21FD00BC6EC3 /* iosrtcPlugin.swift */; };
+		94708D4C1F1E21FD00BC6EC3 /* PluginEnumerateDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D1C1F1E21FD00BC6EC3 /* PluginEnumerateDevices.swift */; };
+		94708D4D1F1E21FD00BC6EC3 /* PluginGetUserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D1D1F1E21FD00BC6EC3 /* PluginGetUserMedia.swift */; };
+		94708D4E1F1E21FD00BC6EC3 /* PluginMediaStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D1E1F1E21FD00BC6EC3 /* PluginMediaStream.swift */; };
+		94708D4F1F1E21FD00BC6EC3 /* PluginMediaStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D1F1F1E21FD00BC6EC3 /* PluginMediaStreamRenderer.swift */; };
+		94708D501F1E21FD00BC6EC3 /* PluginMediaStreamTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D201F1E21FD00BC6EC3 /* PluginMediaStreamTrack.swift */; };
+		94708D511F1E21FD00BC6EC3 /* PluginRTCDataChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D211F1E21FD00BC6EC3 /* PluginRTCDataChannel.swift */; };
+		94708D521F1E21FD00BC6EC3 /* PluginRTCPeerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D221F1E21FD00BC6EC3 /* PluginRTCPeerConnection.swift */; };
+		94708D531F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D231F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConfig.swift */; };
+		94708D541F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D241F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConstraints.swift */; };
+		94708D551F1E21FD00BC6EC3 /* PluginRTCTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D251F1E21FD00BC6EC3 /* PluginRTCTypes.swift */; };
+		94708D561F1E21FD00BC6EC3 /* PluginUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94708D261F1E21FD00BC6EC3 /* PluginUtils.swift */; };
+		94708D571F1E21FD00BC6EC3 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D291F1E21FD00BC6EC3 /* CDVStatusBar.m */; };
+		94708D581F1E21FD00BC6EC3 /* CRKPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D2C1F1E21FD00BC6EC3 /* CRKPeer.m */; };
+		94708D591F1E21FD00BC6EC3 /* KurentoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D2E1F1E21FD00BC6EC3 /* KurentoClient.m */; };
+		94708D5A1F1E21FD00BC6EC3 /* ClassRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D311F1E21FD00BC6EC3 /* ClassRoomManager.m */; };
+		94708D5B1F1E21FD00BC6EC3 /* CRMPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D341F1E21FD00BC6EC3 /* CRMPeer.m */; };
+		94708D5C1F1E21FD00BC6EC3 /* MediaSoupClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D361F1E21FD00BC6EC3 /* MediaSoupClient.m */; };
+		94708D5D1F1E21FD00BC6EC3 /* CRSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D3A1F1E21FD00BC6EC3 /* CRSetting.m */; };
+		94708D5E1F1E21FD00BC6EC3 /* CRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 94708D3D1F1E21FD00BC6EC3 /* CRUtilities.m */; };
+		CBDAA6240E55680254E61A08 /* Pods_Classroom3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B60D8DD2A0A9E483E978DB8 /* Pods_Classroom3.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		706AE99A1EADE3BF0018F278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706AE9781EADE3BF0018F278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 706AE97F1EADE3BF0018F278;
+			remoteInfo = Classroom3;
+		};
+		706AE9A51EADE3BF0018F278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706AE9781EADE3BF0018F278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 706AE97F1EADE3BF0018F278;
+			remoteInfo = Classroom3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		709BA5EB1EAF2334005D52A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				703C69ED1ECD807000C7B7B8 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16546726811B1A5F85EBF7E9 /* Pods-Classroom3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Classroom3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Classroom3/Pods-Classroom3.debug.xcconfig"; sourceTree = "<group>"; };
+		60EC812367D6767A795E7303 /* Pods-Classroom3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Classroom3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Classroom3/Pods-Classroom3.release.xcconfig"; sourceTree = "<group>"; };
+		6B60D8DD2A0A9E483E978DB8 /* Pods_Classroom3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Classroom3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7015E9BE1EB856AA002FA9FB /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		703C69EA1ECD7FAC00C7B7B8 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		706AE9801EADE3BF0018F278 /* WebRTCClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRTCClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		706AE9841EADE3BF0018F278 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		706AE9861EADE3BF0018F278 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		706AE9871EADE3BF0018F278 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		706AE98D1EADE3BF0018F278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		706AE98F1EADE3BF0018F278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		706AE9921EADE3BF0018F278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		706AE9941EADE3BF0018F278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706AE9991EADE3BF0018F278 /* WebRTCClient.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTCClient.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		706AE99D1EADE3BF0018F278 /* Classroom3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Classroom3Tests.m; sourceTree = "<group>"; };
+		706AE99F1EADE3BF0018F278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706AE9A41EADE3BF0018F278 /* WebRTCClient.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTCClient.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		706AE9A81EADE3BF0018F278 /* Classroom3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Classroom3UITests.m; sourceTree = "<group>"; };
+		706AE9AA1EADE3BF0018F278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706AE9BF1EADE8900018F278 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		706AE9C01EADE8900018F278 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70F5E8FB1EAE10CB0097FFE4 /* ClassroomPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassroomPrefixHeader.pch; sourceTree = "<group>"; };
+		94708CF81F1E21FD00BC6EC3 /* SocketClient+Recver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketClient+Recver.h"; sourceTree = "<group>"; };
+		94708CF91F1E21FD00BC6EC3 /* SocketClient+Recver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SocketClient+Recver.m"; sourceTree = "<group>"; };
+		94708CFA1F1E21FD00BC6EC3 /* SocketClient+Sender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketClient+Sender.h"; sourceTree = "<group>"; };
+		94708CFB1F1E21FD00BC6EC3 /* SocketClient+Sender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SocketClient+Sender.m"; sourceTree = "<group>"; };
+		94708CFC1F1E21FD00BC6EC3 /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
+		94708CFD1F1E21FD00BC6EC3 /* SocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketClient.m; sourceTree = "<group>"; };
+		94708CFF1F1E21FD00BC6EC3 /* CRPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPeer.h; sourceTree = "<group>"; };
+		94708D001F1E21FD00BC6EC3 /* CRPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPeer.m; sourceTree = "<group>"; };
+		94708D011F1E21FD00BC6EC3 /* CRStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRStream.h; sourceTree = "<group>"; };
+		94708D021F1E21FD00BC6EC3 /* CRStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRStream.m; sourceTree = "<group>"; };
+		94708D051F1E21FD00BC6EC3 /* AgoraClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraClient.h; sourceTree = "<group>"; };
+		94708D061F1E21FD00BC6EC3 /* AgoraClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgoraClient.m; sourceTree = "<group>"; };
+		94708D071F1E21FD00BC6EC3 /* VideoSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSession.h; sourceTree = "<group>"; };
+		94708D081F1E21FD00BC6EC3 /* VideoSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSession.m; sourceTree = "<group>"; };
+		94708D0A1F1E21FD00BC6EC3 /* CRClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRClient.h; sourceTree = "<group>"; };
+		94708D0B1F1E21FD00BC6EC3 /* CRClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRClient.m; sourceTree = "<group>"; };
+		94708D0C1F1E21FD00BC6EC3 /* CRMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMessage.h; sourceTree = "<group>"; };
+		94708D0D1F1E21FD00BC6EC3 /* CRMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMessage.m; sourceTree = "<group>"; };
+		94708D0E1F1E21FD00BC6EC3 /* CRRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRoom.h; sourceTree = "<group>"; };
+		94708D0F1F1E21FD00BC6EC3 /* CRRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRoom.m; sourceTree = "<group>"; };
+		94708D111F1E21FD00BC6EC3 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		94708D141F1E21FD00BC6EC3 /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVLogger.h; sourceTree = "<group>"; };
+		94708D151F1E21FD00BC6EC3 /* CDVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVLogger.m; sourceTree = "<group>"; };
+		94708D171F1E21FD00BC6EC3 /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVDevice.h; sourceTree = "<group>"; };
+		94708D181F1E21FD00BC6EC3 /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVDevice.m; sourceTree = "<group>"; };
+		94708D1A1F1E21FD00BC6EC3 /* cordova-plugin-iosrtc-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cordova-plugin-iosrtc-Bridging-Header.h"; sourceTree = "<group>"; };
+		94708D1B1F1E21FD00BC6EC3 /* iosrtcPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iosrtcPlugin.swift; sourceTree = "<group>"; };
+		94708D1C1F1E21FD00BC6EC3 /* PluginEnumerateDevices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginEnumerateDevices.swift; sourceTree = "<group>"; };
+		94708D1D1F1E21FD00BC6EC3 /* PluginGetUserMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginGetUserMedia.swift; sourceTree = "<group>"; };
+		94708D1E1F1E21FD00BC6EC3 /* PluginMediaStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginMediaStream.swift; sourceTree = "<group>"; };
+		94708D1F1F1E21FD00BC6EC3 /* PluginMediaStreamRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginMediaStreamRenderer.swift; sourceTree = "<group>"; };
+		94708D201F1E21FD00BC6EC3 /* PluginMediaStreamTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginMediaStreamTrack.swift; sourceTree = "<group>"; };
+		94708D211F1E21FD00BC6EC3 /* PluginRTCDataChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginRTCDataChannel.swift; sourceTree = "<group>"; };
+		94708D221F1E21FD00BC6EC3 /* PluginRTCPeerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginRTCPeerConnection.swift; sourceTree = "<group>"; };
+		94708D231F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginRTCPeerConnectionConfig.swift; sourceTree = "<group>"; };
+		94708D241F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginRTCPeerConnectionConstraints.swift; sourceTree = "<group>"; };
+		94708D251F1E21FD00BC6EC3 /* PluginRTCTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginRTCTypes.swift; sourceTree = "<group>"; };
+		94708D261F1E21FD00BC6EC3 /* PluginUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginUtils.swift; sourceTree = "<group>"; };
+		94708D281F1E21FD00BC6EC3 /* CDVStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVStatusBar.h; sourceTree = "<group>"; };
+		94708D291F1E21FD00BC6EC3 /* CDVStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVStatusBar.m; sourceTree = "<group>"; };
+		94708D2B1F1E21FD00BC6EC3 /* CRKPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRKPeer.h; sourceTree = "<group>"; };
+		94708D2C1F1E21FD00BC6EC3 /* CRKPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRKPeer.m; sourceTree = "<group>"; };
+		94708D2D1F1E21FD00BC6EC3 /* KurentoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KurentoClient.h; sourceTree = "<group>"; };
+		94708D2E1F1E21FD00BC6EC3 /* KurentoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KurentoClient.m; sourceTree = "<group>"; };
+		94708D301F1E21FD00BC6EC3 /* ClassRoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassRoomManager.h; sourceTree = "<group>"; };
+		94708D311F1E21FD00BC6EC3 /* ClassRoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassRoomManager.m; sourceTree = "<group>"; };
+		94708D331F1E21FD00BC6EC3 /* CRMPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMPeer.h; sourceTree = "<group>"; };
+		94708D341F1E21FD00BC6EC3 /* CRMPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMPeer.m; sourceTree = "<group>"; };
+		94708D351F1E21FD00BC6EC3 /* MediaSoupClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaSoupClient.h; sourceTree = "<group>"; };
+		94708D361F1E21FD00BC6EC3 /* MediaSoupClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaSoupClient.m; sourceTree = "<group>"; };
+		94708D381F1E21FD00BC6EC3 /* CRMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMacros.h; sourceTree = "<group>"; };
+		94708D391F1E21FD00BC6EC3 /* CRSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSetting.h; sourceTree = "<group>"; };
+		94708D3A1F1E21FD00BC6EC3 /* CRSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSetting.m; sourceTree = "<group>"; };
+		94708D3B1F1E21FD00BC6EC3 /* CRTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTypes.h; sourceTree = "<group>"; };
+		94708D3C1F1E21FD00BC6EC3 /* CRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtilities.h; sourceTree = "<group>"; };
+		94708D3D1F1E21FD00BC6EC3 /* CRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUtilities.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		706AE97D1EADE3BF0018F278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7015E9BF1EB856AA002FA9FB /* MetalKit.framework in Frameworks */,
+				CBDAA6240E55680254E61A08 /* Pods_Classroom3.framework in Frameworks */,
+				703C69EB1ECD7FAC00C7B7B8 /* WebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706AE9961EADE3BF0018F278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706AE9A11EADE3BF0018F278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		706AE9771EADE3BF0018F278 = {
+			isa = PBXGroup;
+			children = (
+				706AE9821EADE3BF0018F278 /* Classroom3 */,
+				706AE99C1EADE3BF0018F278 /* Classroom3Tests */,
+				706AE9A71EADE3BF0018F278 /* Classroom3UITests */,
+				706AE9811EADE3BF0018F278 /* Products */,
+				7A30BF33E063AD0F6E03F53D /* Pods */,
+				878A63FBD8587081E82780B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		706AE9811EADE3BF0018F278 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				706AE9801EADE3BF0018F278 /* WebRTCClient.app */,
+				706AE9991EADE3BF0018F278 /* WebRTCClient.xctest */,
+				706AE9A41EADE3BF0018F278 /* WebRTCClient.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		706AE9821EADE3BF0018F278 /* Classroom3 */ = {
+			isa = PBXGroup;
+			children = (
+				706AE9861EADE3BF0018F278 /* AppDelegate.h */,
+				706AE9871EADE3BF0018F278 /* AppDelegate.m */,
+				94708CF51F1E21FD00BC6EC3 /* WebRTCClient */,
+				706AE9BE1EADE8900018F278 /* Main */,
+				706AE9831EADE3BF0018F278 /* Supporting Files */,
+			);
+			path = Classroom3;
+			sourceTree = "<group>";
+		};
+		706AE9831EADE3BF0018F278 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70F5E8FB1EAE10CB0097FFE4 /* ClassroomPrefixHeader.pch */,
+				706AE98F1EADE3BF0018F278 /* Assets.xcassets */,
+				706AE98C1EADE3BF0018F278 /* Main.storyboard */,
+				706AE9911EADE3BF0018F278 /* LaunchScreen.storyboard */,
+				706AE9941EADE3BF0018F278 /* Info.plist */,
+				706AE9841EADE3BF0018F278 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		706AE99C1EADE3BF0018F278 /* Classroom3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				706AE99D1EADE3BF0018F278 /* Classroom3Tests.m */,
+				706AE99F1EADE3BF0018F278 /* Info.plist */,
+			);
+			path = Classroom3Tests;
+			sourceTree = "<group>";
+		};
+		706AE9A71EADE3BF0018F278 /* Classroom3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				706AE9A81EADE3BF0018F278 /* Classroom3UITests.m */,
+				706AE9AA1EADE3BF0018F278 /* Info.plist */,
+			);
+			path = Classroom3UITests;
+			sourceTree = "<group>";
+		};
+		706AE9BE1EADE8900018F278 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				706AE9BF1EADE8900018F278 /* ViewController.h */,
+				706AE9C01EADE8900018F278 /* ViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7A30BF33E063AD0F6E03F53D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16546726811B1A5F85EBF7E9 /* Pods-Classroom3.debug.xcconfig */,
+				60EC812367D6767A795E7303 /* Pods-Classroom3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		878A63FBD8587081E82780B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				703C69EA1ECD7FAC00C7B7B8 /* WebRTC.framework */,
+				7015E9BE1EB856AA002FA9FB /* MetalKit.framework */,
+				6B60D8DD2A0A9E483E978DB8 /* Pods_Classroom3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94708CF51F1E21FD00BC6EC3 /* WebRTCClient */ = {
+			isa = PBXGroup;
+			children = (
+				94708CF61F1E21FD00BC6EC3 /* Lib */,
+				94708D031F1E21FD00BC6EC3 /* MediaClient */,
+				94708D371F1E21FD00BC6EC3 /* Others */,
+			);
+			path = WebRTCClient;
+			sourceTree = "<group>";
+		};
+		94708CF61F1E21FD00BC6EC3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				94708CF71F1E21FD00BC6EC3 /* SocketClient */,
+				94708CFE1F1E21FD00BC6EC3 /* Webrtc */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		94708CF71F1E21FD00BC6EC3 /* SocketClient */ = {
+			isa = PBXGroup;
+			children = (
+				94708CF81F1E21FD00BC6EC3 /* SocketClient+Recver.h */,
+				94708CF91F1E21FD00BC6EC3 /* SocketClient+Recver.m */,
+				94708CFA1F1E21FD00BC6EC3 /* SocketClient+Sender.h */,
+				94708CFB1F1E21FD00BC6EC3 /* SocketClient+Sender.m */,
+				94708CFC1F1E21FD00BC6EC3 /* SocketClient.h */,
+				94708CFD1F1E21FD00BC6EC3 /* SocketClient.m */,
+			);
+			path = SocketClient;
+			sourceTree = "<group>";
+		};
+		94708CFE1F1E21FD00BC6EC3 /* Webrtc */ = {
+			isa = PBXGroup;
+			children = (
+				94708CFF1F1E21FD00BC6EC3 /* CRPeer.h */,
+				94708D001F1E21FD00BC6EC3 /* CRPeer.m */,
+				94708D011F1E21FD00BC6EC3 /* CRStream.h */,
+				94708D021F1E21FD00BC6EC3 /* CRStream.m */,
+			);
+			path = Webrtc;
+			sourceTree = "<group>";
+		};
+		94708D031F1E21FD00BC6EC3 /* MediaClient */ = {
+			isa = PBXGroup;
+			children = (
+				94708D041F1E21FD00BC6EC3 /* Agora */,
+				94708D091F1E21FD00BC6EC3 /* Base */,
+				94708D101F1E21FD00BC6EC3 /* Cordova */,
+				94708D2A1F1E21FD00BC6EC3 /* Kurento */,
+				94708D2F1F1E21FD00BC6EC3 /* Manager */,
+				94708D321F1E21FD00BC6EC3 /* MediaSoup */,
+			);
+			path = MediaClient;
+			sourceTree = "<group>";
+		};
+		94708D041F1E21FD00BC6EC3 /* Agora */ = {
+			isa = PBXGroup;
+			children = (
+				94708D051F1E21FD00BC6EC3 /* AgoraClient.h */,
+				94708D061F1E21FD00BC6EC3 /* AgoraClient.m */,
+				94708D071F1E21FD00BC6EC3 /* VideoSession.h */,
+				94708D081F1E21FD00BC6EC3 /* VideoSession.m */,
+			);
+			path = Agora;
+			sourceTree = "<group>";
+		};
+		94708D091F1E21FD00BC6EC3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				94708D0A1F1E21FD00BC6EC3 /* CRClient.h */,
+				94708D0B1F1E21FD00BC6EC3 /* CRClient.m */,
+				94708D0C1F1E21FD00BC6EC3 /* CRMessage.h */,
+				94708D0D1F1E21FD00BC6EC3 /* CRMessage.m */,
+				94708D0E1F1E21FD00BC6EC3 /* CRRoom.h */,
+				94708D0F1F1E21FD00BC6EC3 /* CRRoom.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		94708D101F1E21FD00BC6EC3 /* Cordova */ = {
+			isa = PBXGroup;
+			children = (
+				94708D111F1E21FD00BC6EC3 /* config.xml */,
+				94708D121F1E21FD00BC6EC3 /* Plugins */,
+			);
+			path = Cordova;
+			sourceTree = "<group>";
+		};
+		94708D121F1E21FD00BC6EC3 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				94708D131F1E21FD00BC6EC3 /* cordova-plugin-console */,
+				94708D161F1E21FD00BC6EC3 /* cordova-plugin-device */,
+				94708D191F1E21FD00BC6EC3 /* cordova-plugin-iosrtc */,
+				94708D271F1E21FD00BC6EC3 /* cordova-plugin-statusbar */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		94708D131F1E21FD00BC6EC3 /* cordova-plugin-console */ = {
+			isa = PBXGroup;
+			children = (
+				94708D141F1E21FD00BC6EC3 /* CDVLogger.h */,
+				94708D151F1E21FD00BC6EC3 /* CDVLogger.m */,
+			);
+			path = "cordova-plugin-console";
+			sourceTree = "<group>";
+		};
+		94708D161F1E21FD00BC6EC3 /* cordova-plugin-device */ = {
+			isa = PBXGroup;
+			children = (
+				94708D171F1E21FD00BC6EC3 /* CDVDevice.h */,
+				94708D181F1E21FD00BC6EC3 /* CDVDevice.m */,
+			);
+			path = "cordova-plugin-device";
+			sourceTree = "<group>";
+		};
+		94708D191F1E21FD00BC6EC3 /* cordova-plugin-iosrtc */ = {
+			isa = PBXGroup;
+			children = (
+				94708D1A1F1E21FD00BC6EC3 /* cordova-plugin-iosrtc-Bridging-Header.h */,
+				94708D1B1F1E21FD00BC6EC3 /* iosrtcPlugin.swift */,
+				94708D1C1F1E21FD00BC6EC3 /* PluginEnumerateDevices.swift */,
+				94708D1D1F1E21FD00BC6EC3 /* PluginGetUserMedia.swift */,
+				94708D1E1F1E21FD00BC6EC3 /* PluginMediaStream.swift */,
+				94708D1F1F1E21FD00BC6EC3 /* PluginMediaStreamRenderer.swift */,
+				94708D201F1E21FD00BC6EC3 /* PluginMediaStreamTrack.swift */,
+				94708D211F1E21FD00BC6EC3 /* PluginRTCDataChannel.swift */,
+				94708D221F1E21FD00BC6EC3 /* PluginRTCPeerConnection.swift */,
+				94708D231F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConfig.swift */,
+				94708D241F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConstraints.swift */,
+				94708D251F1E21FD00BC6EC3 /* PluginRTCTypes.swift */,
+				94708D261F1E21FD00BC6EC3 /* PluginUtils.swift */,
+			);
+			path = "cordova-plugin-iosrtc";
+			sourceTree = "<group>";
+		};
+		94708D271F1E21FD00BC6EC3 /* cordova-plugin-statusbar */ = {
+			isa = PBXGroup;
+			children = (
+				94708D281F1E21FD00BC6EC3 /* CDVStatusBar.h */,
+				94708D291F1E21FD00BC6EC3 /* CDVStatusBar.m */,
+			);
+			path = "cordova-plugin-statusbar";
+			sourceTree = "<group>";
+		};
+		94708D2A1F1E21FD00BC6EC3 /* Kurento */ = {
+			isa = PBXGroup;
+			children = (
+				94708D2B1F1E21FD00BC6EC3 /* CRKPeer.h */,
+				94708D2C1F1E21FD00BC6EC3 /* CRKPeer.m */,
+				94708D2D1F1E21FD00BC6EC3 /* KurentoClient.h */,
+				94708D2E1F1E21FD00BC6EC3 /* KurentoClient.m */,
+			);
+			path = Kurento;
+			sourceTree = "<group>";
+		};
+		94708D2F1F1E21FD00BC6EC3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				94708D301F1E21FD00BC6EC3 /* ClassRoomManager.h */,
+				94708D311F1E21FD00BC6EC3 /* ClassRoomManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		94708D321F1E21FD00BC6EC3 /* MediaSoup */ = {
+			isa = PBXGroup;
+			children = (
+				94708D331F1E21FD00BC6EC3 /* CRMPeer.h */,
+				94708D341F1E21FD00BC6EC3 /* CRMPeer.m */,
+				94708D351F1E21FD00BC6EC3 /* MediaSoupClient.h */,
+				94708D361F1E21FD00BC6EC3 /* MediaSoupClient.m */,
+			);
+			path = MediaSoup;
+			sourceTree = "<group>";
+		};
+		94708D371F1E21FD00BC6EC3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				94708D381F1E21FD00BC6EC3 /* CRMacros.h */,
+				94708D391F1E21FD00BC6EC3 /* CRSetting.h */,
+				94708D3A1F1E21FD00BC6EC3 /* CRSetting.m */,
+				94708D3B1F1E21FD00BC6EC3 /* CRTypes.h */,
+				94708D3C1F1E21FD00BC6EC3 /* CRUtilities.h */,
+				94708D3D1F1E21FD00BC6EC3 /* CRUtilities.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		706AE97F1EADE3BF0018F278 /* WebRTCClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706AE9AD1EADE3BF0018F278 /* Build configuration list for PBXNativeTarget "WebRTCClient" */;
+			buildPhases = (
+				57904C6D76F4A2D54AFC9C61 /* [CP] Check Pods Manifest.lock */,
+				706AE97C1EADE3BF0018F278 /* Sources */,
+				706AE97D1EADE3BF0018F278 /* Frameworks */,
+				706AE97E1EADE3BF0018F278 /* Resources */,
+				CCBD81A664BD4D2CCA08F36A /* [CP] Embed Pods Frameworks */,
+				61935B93F0BF2C61232537AC /* [CP] Copy Pods Resources */,
+				709BA5EB1EAF2334005D52A2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebRTCClient;
+			productName = Classroom3;
+			productReference = 706AE9801EADE3BF0018F278 /* WebRTCClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		706AE9981EADE3BF0018F278 /* WebRTCClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706AE9B01EADE3BF0018F278 /* Build configuration list for PBXNativeTarget "WebRTCClientTests" */;
+			buildPhases = (
+				706AE9951EADE3BF0018F278 /* Sources */,
+				706AE9961EADE3BF0018F278 /* Frameworks */,
+				706AE9971EADE3BF0018F278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				706AE99B1EADE3BF0018F278 /* PBXTargetDependency */,
+			);
+			name = WebRTCClientTests;
+			productName = Classroom3Tests;
+			productReference = 706AE9991EADE3BF0018F278 /* WebRTCClient.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		706AE9A31EADE3BF0018F278 /* WebRTCClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706AE9B31EADE3BF0018F278 /* Build configuration list for PBXNativeTarget "WebRTCClientUITests" */;
+			buildPhases = (
+				706AE9A01EADE3BF0018F278 /* Sources */,
+				706AE9A11EADE3BF0018F278 /* Frameworks */,
+				706AE9A21EADE3BF0018F278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				706AE9A61EADE3BF0018F278 /* PBXTargetDependency */,
+			);
+			name = WebRTCClientUITests;
+			productName = Classroom3UITests;
+			productReference = 706AE9A41EADE3BF0018F278 /* WebRTCClient.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		706AE9781EADE3BF0018F278 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = dadaabc;
+				TargetAttributes = {
+					706AE97F1EADE3BF0018F278 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					706AE9981EADE3BF0018F278 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3NFVM7S86S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 706AE97F1EADE3BF0018F278;
+					};
+					706AE9A31EADE3BF0018F278 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3NFVM7S86S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 706AE97F1EADE3BF0018F278;
+					};
+				};
+			};
+			buildConfigurationList = 706AE97B1EADE3BF0018F278 /* Build configuration list for PBXProject "WebRTCClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 706AE9771EADE3BF0018F278;
+			productRefGroup = 706AE9811EADE3BF0018F278 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				706AE97F1EADE3BF0018F278 /* WebRTCClient */,
+				706AE9981EADE3BF0018F278 /* WebRTCClientTests */,
+				706AE9A31EADE3BF0018F278 /* WebRTCClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		706AE97E1EADE3BF0018F278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706AE9931EADE3BF0018F278 /* LaunchScreen.storyboard in Resources */,
+				706AE9901EADE3BF0018F278 /* Assets.xcassets in Resources */,
+				706AE98E1EADE3BF0018F278 /* Main.storyboard in Resources */,
+				94708D481F1E21FD00BC6EC3 /* config.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706AE9971EADE3BF0018F278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706AE9A21EADE3BF0018F278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57904C6D76F4A2D54AFC9C61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61935B93F0BF2C61232537AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Classroom3/Pods-Classroom3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBD81A664BD4D2CCA08F36A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Classroom3/Pods-Classroom3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		706AE97C1EADE3BF0018F278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94708D531F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConfig.swift in Sources */,
+				94708D5C1F1E21FD00BC6EC3 /* MediaSoupClient.m in Sources */,
+				94708D511F1E21FD00BC6EC3 /* PluginRTCDataChannel.swift in Sources */,
+				94708D4F1F1E21FD00BC6EC3 /* PluginMediaStreamRenderer.swift in Sources */,
+				94708D4B1F1E21FD00BC6EC3 /* iosrtcPlugin.swift in Sources */,
+				94708D521F1E21FD00BC6EC3 /* PluginRTCPeerConnection.swift in Sources */,
+				94708D591F1E21FD00BC6EC3 /* KurentoClient.m in Sources */,
+				94708D3F1F1E21FD00BC6EC3 /* SocketClient+Sender.m in Sources */,
+				706AE9C11EADE8900018F278 /* ViewController.m in Sources */,
+				94708D4D1F1E21FD00BC6EC3 /* PluginGetUserMedia.swift in Sources */,
+				706AE9881EADE3BF0018F278 /* AppDelegate.m in Sources */,
+				94708D431F1E21FD00BC6EC3 /* AgoraClient.m in Sources */,
+				94708D461F1E21FD00BC6EC3 /* CRMessage.m in Sources */,
+				94708D5E1F1E21FD00BC6EC3 /* CRUtilities.m in Sources */,
+				94708D471F1E21FD00BC6EC3 /* CRRoom.m in Sources */,
+				94708D551F1E21FD00BC6EC3 /* PluginRTCTypes.swift in Sources */,
+				94708D401F1E21FD00BC6EC3 /* SocketClient.m in Sources */,
+				94708D3E1F1E21FD00BC6EC3 /* SocketClient+Recver.m in Sources */,
+				94708D571F1E21FD00BC6EC3 /* CDVStatusBar.m in Sources */,
+				94708D501F1E21FD00BC6EC3 /* PluginMediaStreamTrack.swift in Sources */,
+				94708D5B1F1E21FD00BC6EC3 /* CRMPeer.m in Sources */,
+				94708D4A1F1E21FD00BC6EC3 /* CDVDevice.m in Sources */,
+				94708D5D1F1E21FD00BC6EC3 /* CRSetting.m in Sources */,
+				94708D541F1E21FD00BC6EC3 /* PluginRTCPeerConnectionConstraints.swift in Sources */,
+				94708D561F1E21FD00BC6EC3 /* PluginUtils.swift in Sources */,
+				94708D4C1F1E21FD00BC6EC3 /* PluginEnumerateDevices.swift in Sources */,
+				94708D4E1F1E21FD00BC6EC3 /* PluginMediaStream.swift in Sources */,
+				94708D441F1E21FD00BC6EC3 /* VideoSession.m in Sources */,
+				94708D5A1F1E21FD00BC6EC3 /* ClassRoomManager.m in Sources */,
+				94708D411F1E21FD00BC6EC3 /* CRPeer.m in Sources */,
+				94708D421F1E21FD00BC6EC3 /* CRStream.m in Sources */,
+				94708D451F1E21FD00BC6EC3 /* CRClient.m in Sources */,
+				706AE9851EADE3BF0018F278 /* main.m in Sources */,
+				94708D491F1E21FD00BC6EC3 /* CDVLogger.m in Sources */,
+				94708D581F1E21FD00BC6EC3 /* CRKPeer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706AE9951EADE3BF0018F278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706AE99E1EADE3BF0018F278 /* Classroom3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706AE9A01EADE3BF0018F278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706AE9A91EADE3BF0018F278 /* Classroom3UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		706AE99B1EADE3BF0018F278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 706AE97F1EADE3BF0018F278 /* WebRTCClient */;
+			targetProxy = 706AE99A1EADE3BF0018F278 /* PBXContainerItemProxy */;
+		};
+		706AE9A61EADE3BF0018F278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 706AE97F1EADE3BF0018F278 /* WebRTCClient */;
+			targetProxy = 706AE9A51EADE3BF0018F278 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		706AE98C1EADE3BF0018F278 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				706AE98D1EADE3BF0018F278 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		706AE9911EADE3BF0018F278 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				706AE9921EADE3BF0018F278 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		706AE9AB1EADE3BF0018F278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		706AE9AC1EADE3BF0018F278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		706AE9AE1EADE3BF0018F278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16546726811B1A5F85EBF7E9 /* Pods-Classroom3.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = Classroom3/ClassroomPrefixHeader.pch;
+				INFOPLIST_FILE = Classroom3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classroom3/Classroom3/MediaClient/Cordova/cordova-plugin-iosrtc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.test;
+				PRODUCT_NAME = WebRTCClient;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Classroom3/MediaClient/Cordova/Plugins/cordova-plugin-iosrtc/cordova-plugin-iosrtc-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		706AE9AF1EADE3BF0018F278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EC812367D6767A795E7303 /* Pods-Classroom3.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = Classroom3/ClassroomPrefixHeader.pch;
+				INFOPLIST_FILE = Classroom3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classroom3/Classroom3/MediaClient/Cordova/cordova-plugin-iosrtc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.test;
+				PRODUCT_NAME = WebRTCClient;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Classroom3/MediaClient/Cordova/Plugins/cordova-plugin-iosrtc/cordova-plugin-iosrtc-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		706AE9B11EADE3BF0018F278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
+				INFOPLIST_FILE = Classroom3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.Classroom3Tests;
+				PRODUCT_NAME = WebRTCClient;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCClient.app/WebRTCClient";
+			};
+			name = Debug;
+		};
+		706AE9B21EADE3BF0018F278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
+				INFOPLIST_FILE = Classroom3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.Classroom3Tests;
+				PRODUCT_NAME = WebRTCClient;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCClient.app/WebRTCClient";
+			};
+			name = Release;
+		};
+		706AE9B41EADE3BF0018F278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
+				INFOPLIST_FILE = Classroom3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.Classroom3UITests;
+				PRODUCT_NAME = WebRTCClient;
+				TEST_TARGET_NAME = Classroom3;
+			};
+			name = Debug;
+		};
+		706AE9B51EADE3BF0018F278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3NFVM7S86S;
+				INFOPLIST_FILE = Classroom3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryan.Classroom3UITests;
+				PRODUCT_NAME = WebRTCClient;
+				TEST_TARGET_NAME = Classroom3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		706AE97B1EADE3BF0018F278 /* Build configuration list for PBXProject "WebRTCClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706AE9AB1EADE3BF0018F278 /* Debug */,
+				706AE9AC1EADE3BF0018F278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706AE9AD1EADE3BF0018F278 /* Build configuration list for PBXNativeTarget "WebRTCClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706AE9AE1EADE3BF0018F278 /* Debug */,
+				706AE9AF1EADE3BF0018F278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706AE9B01EADE3BF0018F278 /* Build configuration list for PBXNativeTarget "WebRTCClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706AE9B11EADE3BF0018F278 /* Debug */,
+				706AE9B21EADE3BF0018F278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706AE9B31EADE3BF0018F278 /* Build configuration list for PBXNativeTarget "WebRTCClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706AE9B41EADE3BF0018F278 /* Debug */,
+				706AE9B51EADE3BF0018F278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 706AE9781EADE3BF0018F278 /* Project object */;
+}
